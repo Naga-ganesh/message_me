@@ -10,11 +10,7 @@
         <div class="ui feed">
           <div class="event">
             <div class="content">
-              <% @messages.each do |message| %>
-                <div class="summary">
-                  <em><%= message.user.username %></em>: <a><%= message.body %></a>
-                </div>
-              <% end %>
+              <%= render @messages %>
             </div>
           </div>
         </div>
